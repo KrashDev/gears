@@ -16,7 +16,7 @@ $(document).ready(function() {
   var cogImg = $('.cog img');
   var smallcog = $('.small-cog');
   var smallcogImg = $('.small-cog img');
-
+  var main = $('.main');
   //sizing
   cogImg.css({
     "height": "75px",
@@ -83,7 +83,8 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 
-  //controls
+  // -------------- control buttons --------------
+
   $('button.stop').click(function() {
     cogImg.removeClass('reverse forward');
   });
@@ -103,16 +104,59 @@ $(document).ready(function() {
 
   $('button.break').click(function() {
     cogImg.toggleClass('drop');
+    $(this).text('reset');
   });
 
   $('button.reset').click(function() {
     cogImg.removeClass('active');
   });
 
+  // ------------ color buttons --------------
+
+  $('button.acid').click(function() {
+    main.css('background', 'linear-gradient(to right, #b06ab3, #4568dc)');
+    $('.controls button').css('background', 'linear-gradient(to right, #b06ab3, #4568dc)');
+  });
+
+  $('button.kye').click(function() {
+    main.css('background', 'linear-gradient(to right, #8360c3, #2ebf91)');
+    $('.controls button').css('background', 'linear-gradient(to right, #8360c3, #2ebf91)');
+  });
+
+  $('button.law').click(function() {
+    main.css('background', 'linear-gradient(to right, #0f0c29, #302b63, #24243e)');
+    $('.controls button').css('background', 'linear-gradient(to right, #0f0c29, #302b63, #24243e)');
+  });
+
+  $('button.orange').click(function() {
+    main.css('background', 'linear-gradient(to right, #ff9966, #ff5e62)');
+    $('.controls button').css('background', 'linear-gradient(to right, #ff9966, #ff5e62)');
+  });
+
+  $('button.crimson').click(function() {
+    main.css('background', 'linear-gradient(to right, #642b73, #c6426e)');
+    $('.controls button').css('background', 'linear-gradient(to right, #642b73, #c6426e)');
+  });
+
+  $('button.aqua').click(function() {
+    main.css('background', 'linear-gradient(to right, #159957, #155799)');
+    $('.controls button').css('background', 'linear-gradient(to right, #159957, #155799)');
+  });
+
+  $('button.orca').click(function() {
+    main.css('background', 'linear-gradient(to right, #44a08d, #093637)');
+    $('.controls button').css('background', 'linear-gradient(to right, #44a08d, #093637)');
+  });
+
+  $('button.dusk').click(function() {
+    main.css('background', 'linear-gradient(to right, #2c3e50, #fd746c)');
+    $('.controls button').css('background', 'linear-gradient(to right, #2c3e50, #fd746c)');
+  });
 
 
 
 
 
 
-});
+
+}); //document ready function

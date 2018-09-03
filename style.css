@@ -11,7 +11,9 @@ body {
 
 .main {
   overflow: hidden;
-  position: relative;
+  top: 11%;
+  left: 12%;
+  position: absolute;
   margin-top: 3%;
   margin: 0 auto;
   background: linear-gradient(to right, #b06ab3, #4568dc);
@@ -29,10 +31,11 @@ body {
   text-align: center;
 }
 
+/* ---- control buttons --- */
+
 .controls button {
   padding: 8px;
-  border-radius: 20px;
-  background: linear-gradient(to left, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #b06ab3, #4568dc);
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -40,6 +43,80 @@ body {
   font-size: 15px;
   margin: 1%;
 }
+
+/* ---- color buttons buttons --- */
+
+.colors button {
+  top: 20px;
+  margin: 3px;
+  display: inline-block;
+}
+
+.colors button.acid {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+}
+
+.colors button.kye {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.colors button.law {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.colors button.orange {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+.colors button.crimson {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #642b73, #c6426e);
+}
+
+.colors button.aqua {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #159957, #155799);
+}
+
+.colors button.orca {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #44a08d, #093637);
+}
+
+.colors button.dusk {
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #2c3e50, #fd746c);
+}
+
+/* -------------------------------------------------------- */
 
 .cog {
   position: relative;
